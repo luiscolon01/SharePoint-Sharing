@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="utf-8"?><!--SPG:
+
+Este archivo HTML se ha asociado a un diseño de página de SharePoint (archivo .aspx) del mismo nombre. Mientras los archivos estén asociados, no podrá editar el archivo .aspx y las operaciones de cambio de nombre, movimiento o eliminación serán recíprocas.
+
+Para elaborar el diseño de página directamente desde este archivo HTML, solo tiene que rellenar el contenido de los marcadores de posición de contenido. Utilice el Generador de fragmentos de código, en http://edicportalwebpre.aeci.local/_layouts/15/ComponentHome.aspx?Url=http%3A%2F%2Fedicportalwebpre%2Eaeci%2Elocal%2F%5Fcatalogs%2Fmasterpage%2FAECID%2FAECID%20imagen%2D9%202021%2Easpx, para crear y personalizar marcadores de posición de contenido adicionales además de otras entidades útiles de SharePoint. A continuación, copie y péguelos como fragmentos de código HTML en el código HTML. Los cambios realizados en los marcadores de posición de contenido de este archivo se sincronizarán automáticamente con el diseño de página asociado.
+
+-->
+<!-- _lcid="3082" _version="15.0.4420" _dal="1" -->
+<!-- _LocalBinding -->
+<!--SPM:<%@Master language="C#"%>-->
+<!--SPM:<%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>-->
+<!--SPM:<%@ Register Tagprefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>-->
+<!--SPM:<%@ Import Namespace="Microsoft.SharePoint" %>-->
+<!--SPM:<%@ Assembly Name="Microsoft.Web.CommandUI, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>-->
+<!--SPM:<%@ Import Namespace="Microsoft.SharePoint.ApplicationPages" %>-->
+<!--SPM:<%@ Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>-->
+<!--SPM:<%@ Register TagPrefix="wssuc" TagName="Welcome" src="~/_controltemplates/15/Welcome.ascx" %>-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"[]>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+    <head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=11" />
+        <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta charset="UTF-8" />
+
+        <style>//<![CDATA[
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+//]]>
+        </style>
+        <link rel="icon" title="Portal Web AECID" href="/Style%20Library/AECID/imagenes/favicon.ico" type="image/vnd.microsoft.icon" hreflang="es-es" media="all" />
+        <!--MS:<asp:ContentPlaceHolder id="PlaceHolderPageTitle" runat="server">-->
+            <!--SPM:<SharePoint:ProjectProperty Property="Title" runat="server"/>-->
+            <!--CS: Iniciar fragmento de código Campo de página: Título -->
+            <!--SPM:<%@Register Tagprefix="PageFieldFieldValue" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+            <!--MS:<PageFieldFieldValue:FieldValue FieldName="fa564e0f-0c70-4ab9-b863-0177e6ddd247" runat="server">-->
+            <!--ME:</PageFieldFieldValue:FieldValue>-->
+            <!--CE: Fin del fragmento de código Campo de página: Título-->
+        <!--ME:</asp:ContentPlaceHolder>-->
+        <link href="http://portalaecid/_layouts/15/3082/styles/corev15.css" type="text/css" rel="stylesheet" />
+        <link href="http://portalaecid/_layouts/15/3082/styles/searchv15.css" type="text/css" rel="stylesheet" />
+        <!--MS:<asp:ContentPlaceHolder id="PlaceHolderAdditionalPageHead" runat="server">-->
+            <!--CS: Iniciar fragmento de código Panel del modo Edición -->
+            <!--SPM:<%@Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+            <!--SPM:<%@Register Tagprefix="Publishing" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+            <link href="/Style%20Library/AECID/css/AECID2021.css" id="AECID2" rel="stylesheet" type="text/css" ms-design-css-conversion="no" />
+            <!--MS:<Publishing:EditModePanel runat="server" id="editmodestyles">-->
+                <!--MS:<SharePoint:CssRegistration name="&#60;% $SPUrl:~sitecollection/Style Library/~language/Themable/Core Styles/editmode15.css %&#62;" After="&#60;% $SPUrl:~sitecollection/Style Library/~language/Themable/Core Styles/pagelayouts15.css %&#62;" runat="server">-->
+                <!--ME:</SharePoint:CssRegistration>-->
+            <!--ME:</Publishing:EditModePanel>-->
+            <!--CE: Fin del fragmento de código Panel del modo Edición-->
+        <!--ME:</asp:ContentPlaceHolder>-->
+        <script>//<![CDATA[
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),<u></u>
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-47686342-1', 'aecid.es');
+		  ga('send', 'pageview');
+		
+        
+        
+        
+        
+        
+        //]]>
+        </script>
+        <!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:ContentPlaceHolderHashPlaceHolderPageTitleInTitleArea msdt:dt="string">1</mso:ContentPlaceHolderHashPlaceHolderPageTitleInTitleArea>
+<mso:ContentPlaceHolderHashPlaceHolderMain msdt:dt="string">1</mso:ContentPlaceHolderHashPlaceHolderMain>
+<mso:HtmlDesignStatusAndPreview msdt:dt="string">http://edicportalwebpre.aeci.local/_catalogs/masterpage/AECID/AECID imagen-9 2021.html, Conversión correcta.</mso:HtmlDesignStatusAndPreview>
+<mso:ContentTypeId msdt:dt="string">0x01010007FF3E057FA8AB4AA42FCB67B453FFC100E214EEE741181F4E9F7ACC43278EE8110003D357F861E29844953D5CAA1D4D8A3B</mso:ContentTypeId>
+<mso:ContentPlaceHolderHashPlaceHolderAdditionalPageHead msdt:dt="string">1</mso:ContentPlaceHolderHashPlaceHolderAdditionalPageHead>
+<mso:ContentPlaceHolderHashPlaceHolderPageTitle msdt:dt="string">1</mso:ContentPlaceHolderHashPlaceHolderPageTitle>
+<mso:MasterHash msdt:dt="string">1340404728</mso:MasterHash>
+<mso:HtmlDesignFromMaster msdt:dt="string">http://edicportalwebpre.aeci.local/_catalogs/masterpage/AECID/AECID_master_NEW.html, http://edicportalwebpre.aeci.local/_catalogs/masterpage/AECID/AECID_master_NEW.html</mso:HtmlDesignFromMaster>
+<mso:PublishingAssociatedContentType msdt:dt="string">;#AECID Layout 2021;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF390088EE2451636427448C12FA15B3E4B6FE;#</mso:PublishingAssociatedContentType>
+<mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
+<mso:ContentPlaceHolderChangedPlaceHolderPageTitle msdt:dt="string">True</mso:ContentPlaceHolderChangedPlaceHolderPageTitle>
+<mso:ContentPlaceHolderHashPlaceHolderFormDigest msdt:dt="string">1833940137</mso:ContentPlaceHolderHashPlaceHolderFormDigest>
+<mso:ContentPlaceHolderChangedPlaceHolderAdditionalPageHead msdt:dt="string">True</mso:ContentPlaceHolderChangedPlaceHolderAdditionalPageHead>
+<mso:ContentPlaceHolderChangedPlaceHolderMain msdt:dt="string">True</mso:ContentPlaceHolderChangedPlaceHolderMain>
+<mso:ContentPlaceHolderHashPlaceHolderPropiedadesPagina msdt:dt="string">-2082029823</mso:ContentPlaceHolderHashPlaceHolderPropiedadesPagina>
+<mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
+<mso:PublishingPreviewImage msdt:dt="string"></mso:PublishingPreviewImage>
+<mso:HtmlDesignPreviewUrl msdt:dt="string"></mso:HtmlDesignPreviewUrl>
+<mso:MasterPageDescription msdt:dt="string"></mso:MasterPageDescription>
+<mso:PublishingAssociatedVariations msdt:dt="string"></mso:PublishingAssociatedVariations>
+<mso:PublishingHidden msdt:dt="string">0</mso:PublishingHidden>
+<mso:ContentPlaceHolderChangedPlaceHolderPageTitleInTitleArea msdt:dt="string">True</mso:ContentPlaceHolderChangedPlaceHolderPageTitleInTitleArea>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+        <title>AECID imagen-9 2021</title>
+    </head>
+    <body>
+        <!--MS:<asp:ContentPlaceHolder id="PlaceHolderMain" runat="server" ID="PlaceHolderPageTitleInTitleArea">-->
+            <!--CS: Iniciar fragmento de código Campo de página: Título -->
+            <!--SPM:<%@Register Tagprefix="PageFieldFieldValue" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+            <!--MS:<PageFieldFieldValue:FieldValue FieldName="fa564e0f-0c70-4ab9-b863-0177e6ddd247" runat="server">-->
+            <!--ME:</PageFieldFieldValue:FieldValue>-->
+            <!--CE: Fin del fragmento de código Campo de página: Título-->
+        <!--ME:</asp:ContentPlaceHolder>-->
+        <!--MS:<asp:ContentPlaceHolder id="PlaceHolderMain" runat="server">-->
+            <section class="aed-wrapper aed-padding-vertical--24">
+                <!-- Título de la página -->
+                <h1 class="aed-title aed-margin-bottom--24">
+                    <!--CS: Iniciar fragmento de código Campo de página: Titulo 1 -->
+                    <!--SPM:<%@Register Tagprefix="PageFieldRichHtmlField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                    <!--MS:<PageFieldRichHtmlField:RichHtmlField FieldName="cca5f19c-0153-4783-974b-ec3633efef3a" runat="server">-->
+                        <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="titulo_label" style="display: none">
+	Titulo</div><div id="titulo__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display: inline" aria-labelledby="titulo_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">Titulo 1</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field"></div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                    <!--ME:</PageFieldRichHtmlField:RichHtmlField>-->
+                    <!--CE: Fin del fragmento de código Campo de página: Titulo 1-->
+                                    </h1>
+                <div id="DivContenidoPagina">
+                    <span>
+                        <div data-name="Campo de página: Parrafo 1">
+                            <!--CS: Iniciar fragmento de código Campo de página: Parrafo 1 -->
+                            <!--SPM:<%@Register Tagprefix="PageFieldRichHtmlField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                            <!--MS:<PageFieldRichHtmlField:RichHtmlField FieldName="73432010-e185-49a6-8abb-acc1ad2302c8" runat="server">-->
+                                <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="parrafo1_label" style="display: none">
+			Parrafo 1</div><div id="parrafo1__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display: inline" aria-labelledby="parrafo1_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">Parrafo 1</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field">
+						Valor de campo Parrafo 1. Lorem ipsum dolor sit amet, consectetur, 
+						adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+						et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+						exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+						consequat. Duis aute irure dolor in reprehenderit in voluptate 
+						velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+						sint occaecat cupidatat non proident, sunt in culpa qui 
+						officia deserunt mollit anim id est laborum.</div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                            <!--ME:</PageFieldRichHtmlField:RichHtmlField>-->
+                            <!--CE: Fin del fragmento de código Campo de página: Parrafo 1-->
+                        </div>
+                        <!-- Imagen principal de la página -->
+                    </span>
+                                        <span>
+                        <div data-name="Campo de página: Imagen de Portada">
+                            <!--CS: Iniciar fragmento de código Campo de página: Imagen de Portada -->
+                            <!--SPM:<%@Register Tagprefix="PageFieldRichImageField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                            <!--MS:<PageFieldRichImageField:RichImageField FieldName="237c57a2-8d5f-4051-bd55-61d71c52e6c2" runat="server">-->
+                                <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="imagenportada_label" style="display: none">
+			Imagen de Portada</div><div id="imagenportada__ControlWrapper_RichImageField" class="ms-rtestate-field" style="display: inline" aria-labelledby="imagenportada_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">Imagen de Portada</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field"><img alt="" src="/_layouts/images/home.gif" style="BORDER: px solid;" /></div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                            <!--ME:</PageFieldRichImageField:RichImageField>-->
+                            <!--CE: Fin del fragmento de código Campo de página: Imagen de Portada-->
+                        </div>
+                    </span>
+                                        <span>
+                        <div data-name="Campo de página: Parrafo 2">
+                            <!--CS: Iniciar fragmento de código Campo de página: Parafo 2 -->
+                            <!--SPM:<%@Register Tagprefix="PageFieldRichHtmlField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                            <!--MS:<PageFieldRichHtmlField:RichHtmlField FieldName="3c8d017d-6522-49b7-a1d6-fa8cdbc57704" runat="server">-->
+                                <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="parrafo2_label" style="display: none">
+			Parafo 2</div><div id="parrafo2__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display: inline" aria-labelledby="parrafo2_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">Parafo 2</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field">
+						Valor de campo Parafo 2. Lorem ipsum dolor sit amet, consectetur 
+						adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+						et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+						exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+						consequat. Duis aute irure dolor in reprehenderit in voluptate 
+						velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+						sint occaecat cupidatat non proident, sunt in culpa qui 
+						officia deserunt mollit anim id est laborum.</div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                            <!--ME:</PageFieldRichHtmlField:RichHtmlField>-->
+                            <!--CE: Fin del fragmento de código Campo de página: Parafo 2-->
+                        </div>
+                    </span>
+                                        <!-- Proyectos destacados -->
+                    <h2>
+                                        <span>
+                        <div data-name="Campo de página: Titulo 2">
+                            <!--CS: Iniciar fragmento de código Campo de página: Titulo 2 -->
+                            <!--SPM:<%@Register Tagprefix="PageFieldRichHtmlField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                            <!--MS:<PageFieldRichHtmlField:RichHtmlField FieldName="53bf37d6-ca4c-4353-b5d9-793adb97f536" runat="server">-->
+                                <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="titulo2_label" style="display: none">
+			Titulo 2</div><div id="titulo2__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display: inline" aria-labelledby="titulo2_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">Titulo 2</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field">
+						Valor de campo Titulo 2. Lorem ipsum dolor sit amet, consectetur 
+						adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+						et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+						exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+						consequat. Duis aute irure dolor in reprehenderit in voluptate 
+						velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+						sint occaecat cupidatat non proident, sunt in culpa qui 
+						officia deserunt mollit anim id est laborum.</div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                            <!--ME:</PageFieldRichHtmlField:RichHtmlField>-->
+                            <!--CE: Fin del fragmento de código Campo de página: Titulo 2-->
+                        </div>
+                    </span>
+                                        </h2>
+                                        <div class="aed-sector-articles-grid">
+                        <div class="column">
+                            <div class="content">
+                                <div data-name="Campo de página: Imagen 1a">
+                                    <!--CS: Iniciar fragmento de código Campo de página: Imagen 1 -->
+                                    <!--SPM:<%@Register Tagprefix="PageFieldRichImageField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                                    <!--MS:<PageFieldRichImageField:RichImageField FieldName="9f660811-5a08-417a-8502-709468aec823" runat="server">-->
+                                        <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="imagen1_label" style="display: none">
+					Imagen 1b</div><div id="imagen1__ControlWrapper_RichImageField" class="ms-rtestate-field" style="display: inline" aria-labelledby="imagen1_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">Imagen 1x</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field"><img alt="" src="/_layouts/images/home.gif" style="BORDER: px solid;" /></div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                                    <!--ME:</PageFieldRichImageField:RichImageField>-->
+                                    <!--CE: Fin del fragmento de código Campo de página: Imagen 1-->
+                                </div>
+                                <div data-name="Campo de página: PieFoto1Titulo" class="aed-sector-listing">
+                                    <!--CS: Iniciar fragmento de código Campo de página: PieFoto1Titulo -->
+                                    <!--SPM:<%@Register Tagprefix="PageFieldRichHtmlField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                                    <!--MS:<PageFieldRichHtmlField:RichHtmlField FieldName="2f4901d3-0848-4080-bbc1-9caf64d2a95b" runat="server">-->
+                                        <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="pf1_label" style="display: none">
+						PieFoto1Titulo</div><div id="pf1__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display: inline" aria-labelledby="pf1_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">PieFoto1Titulo</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field">
+									Valor de campo PieFoto1Titulo. Lorem ipsum dolor sit 
+									amet, consectetur adipisicing elit, sed do eiusmod tempor 
+									incididunt ut labore et dolore magna aliqua. Ut enim 
+									ad minim veniam, quis nostrud exercitation ullamco laboris 
+									nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+									dolor in reprehenderit in voluptate velit esse cillum 
+									dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+									cupidatat non proident, sunt in culpa qui officia deserunt 
+									mollit anim id est laborum.</div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                                    <!--ME:</PageFieldRichHtmlField:RichHtmlField>-->
+                                    <!--CE: Fin del fragmento de código Campo de página: PieFoto1Titulo-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="content">
+                                <div data-name="Campo de página: Imagen 2">
+                                    <!--CS: Iniciar fragmento de código Campo de página: Imagen 2 -->
+                                    <!--SPM:<%@Register Tagprefix="PageFieldRichImageField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                                    <!--MS:<PageFieldRichImageField:RichImageField FieldName="e8c64bd5-9e06-4749-ba01-161bfa39ca65" runat="server">-->
+                                        <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="imagen2_label" style="display: none">
+						Imagen 2</div><div id="imagen2__ControlWrapper_RichImageField" class="ms-rtestate-field" style="display: inline" aria-labelledby="imagen2_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">Imagen 2</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field"><img alt="" src="/_layouts/images/home.gif" style="BORDER: px solid;" /></div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                                    <!--ME:</PageFieldRichImageField:RichImageField>-->
+                                    <!--CE: Fin del fragmento de código Campo de página: Imagen 2-->
+                                </div>
+                                <div data-name="Campo de página: PieFoto2Titulo" class="aed-sector-listing">
+                                    <!--CS: Iniciar fragmento de código Campo de página: PieFoto2Titulo -->
+                                    <!--SPM:<%@Register Tagprefix="PageFieldRichHtmlField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                                    <!--MS:<PageFieldRichHtmlField:RichHtmlField FieldName="883bdf13-7cd2-4a82-a15b-392ce7ec7db7" runat="server">-->
+                                        <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="pf2_label" style="display: none">
+						PieFoto2Titulo</div><div id="pf2__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display: inline" aria-labelledby="pf2_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">PieFoto2Titulo</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field">
+									Valor de campo PieFoto2Titulo. Lorem ipsum dolor sit 
+									amet, consectetur adipisicing elit, sed do eiusmod tempor 
+									incididunt ut labore et dolore magna aliqua. Ut enim 
+									ad minim veniam, quis nostrud exercitation ullamco laboris 
+									nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+									dolor in reprehenderit in voluptate velit esse cillum 
+									dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+									cupidatat non proident, sunt in culpa qui officia deserunt 
+									mollit anim id est laborum.</div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                                    <!--ME:</PageFieldRichHtmlField:RichHtmlField>-->
+                                    <!--CE: Fin del fragmento de código Campo de página: PieFoto2Titulo-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="content">
+                                <div data-name="Campo de página: Imagen 3">
+                                    <!--CS: Iniciar fragmento de código Campo de página: Imagen 3 -->
+                                    <!--SPM:<%@Register Tagprefix="PageFieldRichImageField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                                    <!--MS:<PageFieldRichImageField:RichImageField FieldName="42eb4f57-6cd5-4486-a96f-ca77128fb6c4" runat="server">-->
+                                        <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="imagen3_label" style="display: none">
+						Imagen 3</div><div id="imagen3__ControlWrapper_RichImageField" class="ms-rtestate-field" style="display: inline" aria-labelledby="imagen3_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">Imagen 3</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field"><img alt="" src="/_layouts/images/home.gif" style="BORDER: px solid;" /></div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                                    <!--ME:</PageFieldRichImageField:RichImageField>-->
+                                    <!--CE: Fin del fragmento de código Campo de página: Imagen 3-->
+                                </div>
+                                <div data-name="Campo de página: PieFoto3Titulo" class="aed-sector-listing">
+                                    <!--CS: Iniciar fragmento de código Campo de página: PieFoto3Titulo -->
+                                    <!--SPM:<%@Register Tagprefix="PageFieldRichHtmlField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                                    <!--MS:<PageFieldRichHtmlField:RichHtmlField FieldName="1220e9e1-bf8c-46c4-adf8-ab51c716e5e1" runat="server">-->
+                                        <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="pf3_label" style="display: none">
+						PieFoto3Titulo</div><div id="pf3__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display: inline" aria-labelledby="pf3_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">PieFoto3Titulo</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field">
+									Valor de campo PieFoto3Titulo. Lorem ipsum dolor sit 
+									amet, consectetur adipisicing elit, sed do eiusmod tempor 
+									incididunt ut labore et dolore magna aliqua. Ut enim 
+									ad minim veniam, quis nostrud exercitation ullamco laboris 
+									nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+									dolor in reprehenderit in voluptate velit esse cillum 
+									dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+									cupidatat non proident, sunt in culpa qui officia deserunt 
+									mollit anim id est laborum.</div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                                    <!--ME:</PageFieldRichHtmlField:RichHtmlField>-->
+                                    <!--CE: Fin del fragmento de código Campo de página: PieFoto3Titulo-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <!-- El sector en su contexto -->
+                    <h2>
+                        <!--CS: Iniciar fragmento de código Campo de página: Titulo 3 -->
+                        <!--SPM:<%@Register Tagprefix="PageFieldRichHtmlField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                        <!--MS:<PageFieldRichHtmlField:RichHtmlField FieldName="634a47fa-36fd-4639-a12e-ca98deb9c0f8" runat="server">-->
+                            <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="titulo3_label" style="display: none">	Titulo 3</div><div id="titulo3__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display: inline" aria-labelledby="titulo3_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">Titulo 3</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field">
+					Valor de campo Titulo 3. Lorem ipsum dolor sit amet, consectetur 
+					adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+					et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+					Duis aute irure dolor in reprehenderit in voluptate velit esse 
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+					cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+					anim id est laborum.</div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                        <!--ME:</PageFieldRichHtmlField:RichHtmlField>-->
+                        <!--CE: Fin del fragmento de código Campo de página: Titulo 3-->
+                    </h2>
+                    <div class="aed-sector-articles-grid">
+                        <div class="column">
+                            <div class="content">
+                                <div data-name="Campo de página: Imagen 4">
+                                    <!--CS: Iniciar fragmento de código Campo de página: Imagen 4 -->
+                                    <!--SPM:<%@Register Tagprefix="PageFieldRichImageField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                                    <!--MS:<PageFieldRichImageField:RichImageField FieldName="1300ccdc-4861-4ccd-bd82-395babebd823" runat="server">-->
+                                        <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="imagen4_label" style="display: none">
+						Imagen 4</div><div id="imagen4__ControlWrapper_RichImageField" class="ms-rtestate-field" style="display: inline" aria-labelledby="imagen4_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">Imagen 4</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field"><img alt="" src="/_layouts/images/home.gif" style="BORDER: px solid;" /></div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                                    <!--ME:</PageFieldRichImageField:RichImageField>-->
+                                    <!--CE: Fin del fragmento de código Campo de página: Imagen 4-->
+                                </div>
+                                <div data-name="Campo de página: PieFoto4">
+                                    <!--CS: Iniciar fragmento de código Campo de página: PieFoto4 -->
+                                    <!--SPM:<%@Register Tagprefix="PageFieldRichHtmlField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                                    <!--MS:<PageFieldRichHtmlField:RichHtmlField FieldName="15126908-8195-4fda-b7ef-53552437c911" runat="server">-->
+                                        <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="pf4_label" style="display: none">
+						PieFoto4</div><div id="pf4__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display: inline" aria-labelledby="pf4_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">PieFoto4</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field">
+									Valor de campo PieFoto4. Lorem ipsum dolor sit amet, 
+									consectetur adipisicing elit, sed do eiusmod tempor 
+									incididunt ut labore et dolore magna aliqua. Ut enim 
+									ad minim veniam, quis nostrud exercitation ullamco laboris 
+									nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+									dolor in reprehenderit in voluptate velit esse cillum 
+									dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+									cupidatat non proident, sunt in culpa qui officia deserunt 
+									mollit anim id est laborum.</div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                                    <!--ME:</PageFieldRichHtmlField:RichHtmlField>-->
+                                    <!--CE: Fin del fragmento de código Campo de página: PieFoto4-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="content">
+                                <div data-name="Campo de página: Imagen 5">
+                                    <!--CS: Iniciar fragmento de código Campo de página: Imagen 5 -->
+                                    <!--SPM:<%@Register Tagprefix="PageFieldRichImageField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                                    <!--MS:<PageFieldRichImageField:RichImageField FieldName="23cf4d5e-05f8-4bba-bb4d-e81f67a66b6e" runat="server">-->
+                                        <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="imagen5_label" style="display: none">
+				Imagen 5</div><div id="imagen5__ControlWrapper_RichImageField" class="ms-rtestate-field" style="display: inline" aria-labelledby="imagen5_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">Imagen 5</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field"><img alt="" src="/_layouts/images/home.gif" style="BORDER: px solid;" /></div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                                    <!--ME:</PageFieldRichImageField:RichImageField>-->
+                                    <!--CE: Fin del fragmento de código Campo de página: Imagen 5-->
+                                </div>
+                                <div data-name="Campo de página: PieFoto5">
+                                    <!--CS: Iniciar fragmento de código Campo de página: PieFoto5 -->
+                                    <!--SPM:<%@Register Tagprefix="PageFieldRichHtmlField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                                    <!--MS:<PageFieldRichHtmlField:RichHtmlField FieldName="92980c98-6a89-4c75-b00d-05c955897d00" runat="server">-->
+                                        <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="pf5_label" style="display: none">
+						PieFoto5</div><div id="pf5__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display: inline" aria-labelledby="pf5_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">PieFoto5</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field">
+									Valor de campo PieFoto5. Lorem ipsum dolor sit amet, 
+									consectetur adipisicing elit, sed do eiusmod tempor 
+									incididunt ut labore et dolore magna aliqua. Ut enim 
+									ad minim veniam, quis nostrud exercitation ullamco laboris 
+									nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+									dolor in reprehenderit in voluptate velit esse cillum 
+									dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+									cupidatat non proident, sunt in culpa qui officia deserunt 
+									mollit anim id est laborum.</div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                                    <!--ME:</PageFieldRichHtmlField:RichHtmlField>-->
+                                    <!--CE: Fin del fragmento de código Campo de página: PieFoto5-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="content">
+                                <div data-name="Campo de página: Imagen 6">
+                                    <!--CS: Iniciar fragmento de código Campo de página: Imagen 6 -->
+                                    <!--SPM:<%@Register Tagprefix="PageFieldRichImageField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                                    <!--MS:<PageFieldRichImageField:RichImageField FieldName="ee98c88e-7d5f-4f6d-9460-48377891ee5a" runat="server">-->
+                                        <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="imagen6_label" style="display: none">
+						Imagen 6</div><div id="imagen6__ControlWrapper_RichImageField" class="ms-rtestate-field" style="display: inline" aria-labelledby="imagen6_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">Imagen 6</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field"><img alt="" src="/_layouts/images/home.gif" style="BORDER: px solid;" /></div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                                    <!--ME:</PageFieldRichImageField:RichImageField>-->
+                                    <!--CE: Fin del fragmento de código Campo de página: Imagen 6-->
+                                </div>
+                                <div data-name="Campo de página: PieFoto6">
+                                    <!--CS: Iniciar fragmento de código Campo de página: PieFoto6 -->
+                                    <!--SPM:<%@Register Tagprefix="PageFieldRichHtmlField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                                    <!--MS:<PageFieldRichHtmlField:RichHtmlField FieldName="69f76947-e44e-4c6c-a2f1-8e251b7b63b2" runat="server">-->
+                                        <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="pf6_label" style="display: none">
+						PieFoto6</div><div id="pf6__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display: inline" aria-labelledby="pf6_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">PieFoto6</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field">
+									Valor de campo PieFoto6. Lorem ipsum dolor sit amet, 
+									consectetur adipisicing elit, sed do eiusmod tempor 
+									incididunt ut labore et dolore magna aliqua. Ut enim 
+									ad minim veniam, quis nostrud exercitation ullamco laboris 
+									nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+									dolor in reprehenderit in voluptate velit esse cillum 
+									dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+									cupidatat non proident, sunt in culpa qui officia deserunt 
+									mollit anim id est laborum.</div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                                    <!--ME:</PageFieldRichHtmlField:RichHtmlField>-->
+                                    <!--CE: Fin del fragmento de código Campo de página: PieFoto6-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="content">
+                                <div data-name="Campo de página: Imagen 7">
+                                    <!--CS: Iniciar fragmento de código Campo de página: Imagen 7 -->
+                                    <!--SPM:<%@Register Tagprefix="PageFieldRichImageField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                                    <!--MS:<PageFieldRichImageField:RichImageField FieldName="17bd96e6-6a54-443a-865b-b44184e466b8" runat="server">-->
+                                        <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="imagen7_label" style="display: none">
+						Imagen 7</div><div id="imagen7__ControlWrapper_RichImageField" class="ms-rtestate-field" style="display: inline" aria-labelledby="iamgen7_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">Imagen 7</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field"><img alt="" src="/_layouts/images/home.gif" style="BORDER: px solid;" /></div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                                    <!--ME:</PageFieldRichImageField:RichImageField>-->
+                                    <!--CE: Fin del fragmento de código Campo de página: Imagen 7-->
+                                </div>
+                                <div data-name="Campo de página: PieFoto7">
+                                    <!--CS: Iniciar fragmento de código Campo de página: PieFoto7 -->
+                                    <!--SPM:<%@Register Tagprefix="PageFieldRichHtmlField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                                    <!--MS:<PageFieldRichHtmlField:RichHtmlField FieldName="c3013ef9-0e1d-4963-88dc-f0292f6d9f98" runat="server">-->
+                                        <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="pf7_label" style="display: none">
+						PieFoto7</div><div id="pf7__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display: inline" aria-labelledby="pf7_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">PieFoto7</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field">
+									Valor de campo PieFoto7. Lorem ipsum dolor sit amet, 
+									consectetur adipisicing elit, sed do eiusmod tempor 
+									incididunt ut labore et dolore magna aliqua. Ut enim 
+									ad minim veniam, quis nostrud exercitation ullamco laboris 
+									nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+									dolor in reprehenderit in voluptate velit esse cillum 
+									dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+									cupidatat non proident, sunt in culpa qui officia deserunt 
+									mollit anim id est laborum.</div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                                    <!--ME:</PageFieldRichHtmlField:RichHtmlField>-->
+                                    <!--CE: Fin del fragmento de código Campo de página: PieFoto7-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="content">
+                                <div data-name="Campo de página: Imagen 8">
+                                    <!--CS: Iniciar fragmento de código Campo de página: Imagen 8 -->
+                                    <!--SPM:<%@Register Tagprefix="PageFieldRichImageField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                                    <!--MS:<PageFieldRichImageField:RichImageField FieldName="4c7c8c61-c92f-4d1c-90a5-d339531b4f15" runat="server">-->
+                                        <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="imagen8_label" style="display: none">
+						Imagen 8</div><div id="imagen8__ControlWrapper_RichImageField" class="ms-rtestate-field" style="display: inline" aria-labelledby="imagen8_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">Imagen 8</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field"><img alt="" src="/_layouts/images/home.gif" style="BORDER: px solid;" /></div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                                    <!--ME:</PageFieldRichImageField:RichImageField>-->
+                                    <!--CE: Fin del fragmento de código Campo de página: Imagen 8-->
+                                </div>
+                                <div data-name="Campo de página: PieFoto8">
+                                    <!--CS: Iniciar fragmento de código Campo de página: PieFoto8 -->
+                                    <!--SPM:<%@Register Tagprefix="PageFieldRichHtmlField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                                    <!--MS:<PageFieldRichHtmlField:RichHtmlField FieldName="b6f7413e-f1cf-4455-b2af-63f05e3fe275" runat="server">-->
+                                        <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="pf8_label" style="display: none">
+						PieFoto8</div><div id="pf8__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display: inline" aria-labelledby="pf8_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">PieFoto8</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field">
+									Valor de campo PieFoto8. Lorem ipsum dolor sit amet, 
+									consectetur adipisicing elit, sed do eiusmod tempor 
+									incididunt ut labore et dolore magna aliqua. Ut enim 
+									ad minim veniam, quis nostrud exercitation ullamco laboris 
+									nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+									dolor in reprehenderit in voluptate velit esse cillum 
+									dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+									cupidatat non proident, sunt in culpa qui officia deserunt 
+									mollit anim id est laborum.</div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                                    <!--ME:</PageFieldRichHtmlField:RichHtmlField>-->
+                                    <!--CE: Fin del fragmento de código Campo de página: PieFoto8-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="content">
+                                <div data-name="Campo de página: Imagen 9">
+                                    <!--CS: Iniciar fragmento de código Campo de página: Imagen 9 -->
+                                    <!--SPM:<%@Register Tagprefix="PageFieldRichImageField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                                    <!--MS:<PageFieldRichImageField:RichImageField FieldName="3897dd03-8533-4217-8afd-88d7ea798393" runat="server">-->
+                                        <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="imagen9_label" style="display: none">
+						Imagen 9</div><div id="imagen9__ControlWrapper_RichImageField" class="ms-rtestate-field" style="display: inline" aria-labelledby="imagen9_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">Imagen 9</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field"><img alt="" src="/_layouts/images/home.gif" style="BORDER: px solid;" /></div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                                    <!--ME:</PageFieldRichImageField:RichImageField>-->
+                                    <!--CE: Fin del fragmento de código Campo de página: Imagen 9-->
+                                </div>
+                                <div data-name="Campo de página: PieFoto9">
+                                    <!--CS: Iniciar fragmento de código Campo de página: PieFoto9 -->
+                                    <!--SPM:<%@Register Tagprefix="PageFieldRichHtmlField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                                    <!--MS:<PageFieldRichHtmlField:RichHtmlField FieldName="86f3e02b-e1a0-49af-bd66-7f55d08e2a24" runat="server">-->
+                                        <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="pf9_label" style="display: none">
+						PieFoto9</div><div id="pf9__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display: inline" aria-labelledby="pf9_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">PieFoto9</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field">
+									Valor de campo PieFoto9. Lorem ipsum dolor sit amet, 
+									consectetur adipisicing elit, sed do eiusmod tempor 
+									incididunt ut labore et dolore magna aliqua. Ut enim 
+									ad minim veniam, quis nostrud exercitation ullamco laboris 
+									nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+									dolor in reprehenderit in voluptate velit esse cillum 
+									dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+									cupidatat non proident, sunt in culpa qui officia deserunt 
+									mollit anim id est laborum.</div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                                    <!--ME:</PageFieldRichHtmlField:RichHtmlField>-->
+                                    <!--CE: Fin del fragmento de código Campo de página: PieFoto9-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Más sección -->
+                    <h2>
+                        <span>
+                            <div data-name="Campo de página: Titulo 4">
+                                <!--CS: Iniciar fragmento de código Campo de página: Titulo 4 -->
+                                <!--SPM:<%@Register Tagprefix="PageFieldRichHtmlField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                                <!--MS:<PageFieldRichHtmlField:RichHtmlField FieldName="225a7014-9e40-4c8e-a39a-e62d83ba4c15" runat="server">-->
+                                    <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="titulo4_label" style="display: none">
+				Titulo 4</div><div id="titulo4__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display: inline" aria-labelledby="titulo4_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">Titulo 4</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field">
+							Valor de campo Titulo 4. Lorem ipsum dolor sit amet, consectetur 
+							adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+							et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+							exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+							consequat. Duis aute irure dolor in reprehenderit in voluptate 
+							velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+							sint occaecat cupidatat non proident, sunt in culpa qui 
+							officia deserunt mollit anim id est laborum.</div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                                <!--ME:</PageFieldRichHtmlField:RichHtmlField>-->
+                                <!--CE: Fin del fragmento de código Campo de página: Titulo 4-->
+                            </div>
+                        </span>
+                    </h2>
+                                        <div class="aed-sector-articles-grid">
+                        <div class="column">
+                            <div class="content">
+                                <div data-name="WebPartZone: Video 1">
+    <!--CS: Iniciar fragmento de código Zona de elementos web -->
+    <!--SPM:<%@Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+    <div xmlns:ie="ie">
+        <!--MS:<WebPartPages:WebPartZone runat="server" ID="x1de737a7a05e4b4fb45ae33c64118d0d" HeaderText="Video 1" AllowPersonalization="False" FrameType="TitleBarOnly" Orientation="Vertical">-->
+            <!--MS:<ZoneTemplate>-->
+                <!--DC: Reemplace este comentario por elementos web predeterminados para páginas nuevas. -->
+            <!--ME:</ZoneTemplate>-->
+        <!--ME:</WebPartPages:WebPartZone>-->
+    </div>
+    <!--CE: Fin del fragmento de código Zona de elementos web-->
+</div>                                <br />
+                                <div data-name="Campo de página: PieVideo1">
+                                    <!--CS: Iniciar fragmento de código Campo de página: PieVideo1 -->
+                                    <!--SPM:<%@Register Tagprefix="PageFieldRichHtmlField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                                    <!--MS:<PageFieldRichHtmlField:RichHtmlField FieldName="e956ec68-4584-4278-9a43-e0baca3a6416" runat="server">-->
+                                        <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="ctl02_label" style="display:none">PieVideo1</div><div id="ctl02__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl02_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">PieVideo1</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field">Valor de campo PieVideo1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                                    <!--ME:</PageFieldRichHtmlField:RichHtmlField>-->
+                                    <!--CE: Fin del fragmento de código Campo de página: PieVideo1-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="content">
+                                <div data-name="WebPartZone">
+    <!--CS: Iniciar fragmento de código Zona de elementos web -->
+    <!--SPM:<%@Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+    <div xmlns:ie="ie">
+        <!--MS:<WebPartPages:WebPartZone runat="server" ID="x1de737a7a05e4b4fb45ae33c64118d0d2" HeaderText="Video 2" AllowPersonalization="False" FrameType="TitleBarOnly" Orientation="Vertical">-->
+            <!--MS:<ZoneTemplate>-->
+                <!--DC: Reemplace este comentario por elementos web predeterminados para páginas nuevas. -->
+            <!--ME:</ZoneTemplate>-->
+        <!--ME:</WebPartPages:WebPartZone>-->
+    </div>
+    <!--CE: Fin del fragmento de código Zona de elementos web-->
+</div>                                <br />
+                                <div data-name="Campo de página: PieVideo2">
+                                    <!--CS: Iniciar fragmento de código Campo de página: PieVideo2 -->
+                                    <!--SPM:<%@Register Tagprefix="PageFieldRichHtmlField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                                    <!--MS:<PageFieldRichHtmlField:RichHtmlField FieldName="5675b1cd-4940-4aff-bcd9-366a4ff89031" runat="server">-->
+                                        <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="ctl02_label" style="display:none">PieVideo2</div><div id="ctl02__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl02_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">PieVideo2</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field">Valor de campo PieVideo2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                                    <!--ME:</PageFieldRichHtmlField:RichHtmlField>-->
+                                    <!--CE: Fin del fragmento de código Campo de página: PieVideo2-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="content">
+                                <div data-name="WebPartZone">
+    <!--CS: Iniciar fragmento de código Zona de elementos web -->
+    <!--SPM:<%@Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+    <div xmlns:ie="ie">
+        <!--MS:<WebPartPages:WebPartZone runat="server" ID="x1de737a7a05e4b4fb45ae33c64118d0d3" HeaderText="Video 3" AllowPersonalization="False" FrameType="TitleBarOnly" Orientation="Vertical">-->
+            <!--MS:<ZoneTemplate>-->
+                <!--DC: Reemplace este comentario por elementos web predeterminados para páginas nuevas. -->
+            <!--ME:</ZoneTemplate>-->
+        <!--ME:</WebPartPages:WebPartZone>-->
+    </div>
+    <!--CE: Fin del fragmento de código Zona de elementos web-->
+</div>                                <br />
+                                <div data-name="Campo de página: PieVideo3">
+                                    <!--CS: Iniciar fragmento de código Campo de página: PieVideo3 -->
+                                    <!--SPM:<%@Register Tagprefix="PageFieldRichHtmlField" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                                    <!--MS:<PageFieldRichHtmlField:RichHtmlField FieldName="4a386bf4-b864-4b6e-b920-7d04cd4766f9" runat="server">-->
+                                        <!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div id="ctl02_label" style="display:none">PieVideo3</div><div id="ctl02__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl02_label"><div align="left" class="ms-formfieldcontainer"><div class="ms-formfieldlabelcontainer" nowrap="nowrap"><span class="ms-formfieldlabel" nowrap="nowrap">PieVideo3</span></div><div class="ms-formfieldvaluecontainer"><div class="ms-rtestate-field">Valor de campo PieVideo3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA-->
+                                    <!--ME:</PageFieldRichHtmlField:RichHtmlField>-->
+                                    <!--CE: Fin del fragmento de código Campo de página: PieVideo3-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="content">
+                            
+                                <div data-name="WebPartZone">
+    <!--CS: Iniciar fragmento de código Zona de elementos web -->
+    <!--SPM:<%@Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+    <div xmlns:ie="ie">
+        <!--MS:<WebPartPages:WebPartZone runat="server" ID="x59d17ddbb70b4c1d9534edbd59907bd4" HeaderText="Enlaces" AllowPersonalization="False" FrameType="None" Orientation="Vertical">-->
+            <!--MS:<ZoneTemplate>-->
+               <!--CS: Iniciar fragmento de código Editor de contenido --><!--SPM:<%@Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>--><!--MS:<WebPartPages:ContentEditorWebPart xmlns:WebPartPages="namespace" runat="server" webpart="true">--><!--PS: Inicio de VISTA PREVIA DE SOLO LECTURA (no modificar)--><div class="ms-webpart-chrome ms-webpart-chrome-fullWidth "><div class="ms-webpart-chrome-title" id="WebPart_ChromeTitle"><span title="Enlaces Web - $Resources:core,ContentEditorWebPartDescription;" id="WebPartTitle" class="js-webpart-titleCell"><h2 style="text-align:justify;" class="ms-webpart-titleText"><nobr><span>Enlaces Web</span><span id="WebPartCaption"></span></nobr></h2></span></div><div WebPartID="00000000-0000-0000-0000-000000000000" HasPers="true" id="WebPart" width="100%" class="ms-WPBody ms-WPBorder noindex ms-wpContentDivSpace " OnlyForMePart="true" allowDelete="false" style=""><div class="ms-rtestate-field"></div><div class="ms-clear"></div></div></div><!--PE: Fin de la VISTA PREVIA DE SOLO LECTURA--><!--MS:<WebPart xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/WebPart/v2">--><!--MS:<Title>--><!--SPM:Enlaces Web--><!--ME:</Title>--><!--MS:<FrameType>--><!--SPM:Default--><!--ME:</FrameType>--><!--MS:<Description>--><!--SPM:$Resources:core,ContentEditorWebPartDescription;--><!--ME:</Description>--><!--MS:<IsIncluded>--><!--SPM:true--><!--ME:</IsIncluded>--><!--MS:<ZoneID>--><!--SPM:ImportedPartZone--><!--ME:</ZoneID>--><!--MS:<PartOrder>--><!--SPM:0--><!--ME:</PartOrder>--><!--MS:<FrameState>--><!--SPM:Normal--><!--ME:</FrameState>--><!--MS:<Height>--><!--ME:</Height>--><!--MS:<Width>--><!--ME:</Width>--><!--MS:<AllowRemove>--><!--SPM:true--><!--ME:</AllowRemove>--><!--MS:<AllowZoneChange>--><!--SPM:true--><!--ME:</AllowZoneChange>--><!--MS:<AllowMinimize>--><!--SPM:true--><!--ME:</AllowMinimize>--><!--MS:<AllowConnect>--><!--SPM:true--><!--ME:</AllowConnect>--><!--MS:<AllowEdit>--><!--SPM:true--><!--ME:</AllowEdit>--><!--MS:<AllowHide>--><!--SPM:true--><!--ME:</AllowHide>--><!--MS:<IsVisible>--><!--SPM:true--><!--ME:</IsVisible>--><!--MS:<DetailLink>--><!--ME:</DetailLink>--><!--MS:<HelpLink>--><!--ME:</HelpLink>--><!--MS:<HelpMode>--><!--SPM:Modeless--><!--ME:</HelpMode>--><!--MS:<Dir>--><!--SPM:Default--><!--ME:</Dir>--><!--MS:<PartImageSmall>--><!--ME:</PartImageSmall>--><!--MS:<MissingAssembly>--><!--SPM:No se puede importar este elemento web.--><!--ME:</MissingAssembly>--><!--MS:<PartImageLarge>--><!--SPM:/_layouts/15/images/mscontl.gif--><!--ME:</PartImageLarge>--><!--MS:<IsIncludedFilter>--><!--ME:</IsIncludedFilter>--><!--MS:<ExportControlledProperties>--><!--SPM:true--><!--ME:</ExportControlledProperties>--><!--MS:<ConnectionID>--><!--SPM:00000000-0000-0000-0000-000000000000--><!--ME:</ConnectionID>--><!--MS:<ID>--><!--SPM:g_fc60a68b_f643_45e7_ad4c_044555159f0e--><!--ME:</ID>--><!--MS:<ContentLink xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor">--><!--ME:</ContentLink>--><!--MS:<Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor">-->
+               <![CDATA[
+<div> 
+
+      <table cellspacing="0" width="100%" class="ms-rteTable-0"> 
+      <caption><h2 style="text-align: left;">Ingrese un título aquí.<br/><br/></h2></caption>
+      <tbody> 
+         <tr class="ms-rteTableEvenRow-0"> 
+            <td class="ms-rteTableEvenCol-0" style="width: 10%;">​<img src="/PublishingImages/Imagenes%20Nuevo%20Portal/Iconos/RedFolder.ico" class="ms-rtePosition-3" alt="" style="margin: 5px;"/><br/></td> 
+            <td class="ms-rteTableOddCol-0" style="width: 90%;">​<a class="hreftable" href="https://www.google.com/" style="display: inline;">Enlace número 1, edite esta línea...</a><br/></td> 
+         </tr>
+         <tr class="ms-rteTableOddRow-0"> 
+            <td class="ms-rteTableEvenCol-0" style="width: 10%;">​<img src="/PublishingImages/Imagenes%20Nuevo%20Portal/Iconos/RedFolder.ico" alt="" style="margin: 5px;"/><br/></td> 
+            <td class="ms-rteTableOddCol-0" style="width: 90%;">​<a class="hreftable" href="https://www.google.com/" style="display: inline;">Enlace número 2, edite esta línea...</a><br/></td> 
+         </tr> 
+         <tr class="ms-rteTableEvenRow-0"> 
+            <td class="ms-rteTableEvenCol-0" style="width: 10%;">​<img src="/PublishingImages/Imagenes%20Nuevo%20Portal/Iconos/RedFolder.ico" alt="" style="margin: 5px;"/><br/></td> 
+            <td class="ms-rteTableOddCol-0" style="width: 90%;">​<a class="hreftable" href="https://www.google.com/" style="display: inline;">Enlace número 3, edite esta línea...</a><br/></td> 
+         </tr> 
+      </tbody> 
+   </table>  
+</div>
+]]><!--ME:</Content>--><!--MS:<PartStorage xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor">--><!--ME:</PartStorage>--><!--MS:<ID>--><!--SPM:g_6fc07796_cdfb_4ba6_8325_246af05a535f--><!--ME:</ID>--><!--ME:</WebPart>--><!--ME:</WebPartPages:ContentEditorWebPart>--><!--CE: Fin del fragmento de código Editor de contenido-->
+            <!--ME:</ZoneTemplate>-->
+        <!--ME:</WebPartPages:WebPartZone>-->
+    </div>
+    <!--CE: Fin del fragmento de código Zona de elementos web-->
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!--ME:</asp:ContentPlaceHolder>-->
+    </body>
+</html>
